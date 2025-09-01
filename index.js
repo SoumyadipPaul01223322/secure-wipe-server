@@ -8,7 +8,7 @@ const host = '0.0.0.0'; // Listen on all available network interfaces
 
 // --- Middleware ---
 // The URL of your live React app will go here
-const clientURL = process.env.CLIENT_URL || 'http://localhost:3000';
+const clientURL = process.env.CLIENT_URL || 'https://secure-wipe-client.onrender.com';
 app.use(cors({ origin: clientURL }));
 
 // Parse incoming JSON requests
@@ -129,4 +129,5 @@ connectToDatabase().then(() => {
         console.log(`Server running on http://${host}:${port}`);
     });
 });
+
 
